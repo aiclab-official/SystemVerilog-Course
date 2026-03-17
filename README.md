@@ -3,15 +3,21 @@
 A **32-bit RISC-V RV32I multi-cycle processor** implemented in SystemVerilog and prototyped on the **Digilent Nexys Video** board (Xilinx Artix-7, XC7A200T).
 The processor executes a pre-loaded Fibonacci firmware and transmits results over **UART** at 115 200 baud.
 
+
+<figure>
+  <img src="20. SoC.png" alt="SoC Architecture"  style="width: 75%">
+</figure>
 ---
 
 <figure>
   <img src="20. FPGA 2.jpeg" alt="FPGA Waveform (Improved the image qualiy by Nano Bnana)"  style="width: 50%">
 </figure>
+(Improved the image qualiy by Nano Bnana)
 
 ## Table of Contents
 
 - [TRIX-V-MC — Tiny RISC-V Multi-Cycle Processor (FPGA)](#trix-v-mc--tiny-risc-v-multi-cycle-processor-fpga)
+	- [](#)
 	- [Table of Contents](#table-of-contents)
 	- [Features](#features)
 	- [Architecture Overview](#architecture-overview)
@@ -77,7 +83,7 @@ The processor executes a pre-loaded Fibonacci firmware and transmits results ove
 	│                  ▼                                        │
 	│          ┌───────────────┐                                │
 	│          │  addr_decoder │                                │
-	│          └───────┬────────┘                               │
+	│          └───────┬───────┘                                │
 	│                  │ sel_uart                               │
 	│                  ▼                                        │
 	│         ┌──────────────────┐                              │
