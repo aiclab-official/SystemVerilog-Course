@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_trixv_mc_fibo_sim.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_utils_pkg" />
+            <top_module name="test_trixv_mc_fibo" />
+            <top_module name="typedefs" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7.147095 us"></ZoomStartTime>
+      <ZoomEndTime time="20.971944 us"></ZoomEndTime>
+      <Cursor1Time time="2.720633 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="174"></NameColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="96" />
+   <wvobject fp_name="divider30" type="divider">
+      <obj_property name="label">FIFO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/uart_tx_obi_inst/tx_fifo/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/uart_tx_obi_inst/tx_fifo/wdata_i">
+      <obj_property name="ElementShortName">wdata_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_i[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/uart_tx_obi_inst/tx_fifo/wr_en_i">
+      <obj_property name="ElementShortName">wr_en_i</obj_property>
+      <obj_property name="ObjectShortName">wr_en_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/uart_tx_obi_inst/tx_fifo/full_o">
+      <obj_property name="ElementShortName">full_o</obj_property>
+      <obj_property name="ObjectShortName">full_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/uart_tx_obi_inst/tx_fifo/rdata_o">
+      <obj_property name="ElementShortName">rdata_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata_o[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/uart_tx_obi_inst/tx_fifo/rd_en_i">
+      <obj_property name="ElementShortName">rd_en_i</obj_property>
+      <obj_property name="ObjectShortName">rd_en_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/uart_tx_obi_inst/tx_fifo/empty_o">
+      <obj_property name="ElementShortName">empty_o</obj_property>
+      <obj_property name="ObjectShortName">empty_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider30" type="divider">
+      <obj_property name="label">Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/opcode_i">
+      <obj_property name="ElementShortName">opcode_i[6:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode_i[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/funct3_i">
+      <obj_property name="ElementShortName">funct3_i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">funct3_i[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/funct7_i">
+      <obj_property name="ElementShortName">funct7_i[6:0]</obj_property>
+      <obj_property name="ObjectShortName">funct7_i[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/pc_ctrl_o">
+      <obj_property name="ElementShortName">pc_ctrl_o</obj_property>
+      <obj_property name="ObjectShortName">pc_ctrl_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/pc_jump_ctrl_o">
+      <obj_property name="ElementShortName">pc_jump_ctrl_o</obj_property>
+      <obj_property name="ObjectShortName">pc_jump_ctrl_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/imm_ctrl_o">
+      <obj_property name="ElementShortName">imm_ctrl_o[2:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_ctrl_o[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/data2_alu_ctrl_o">
+      <obj_property name="ElementShortName">data2_alu_ctrl_o</obj_property>
+      <obj_property name="ObjectShortName">data2_alu_ctrl_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/alu_ctrl_o">
+      <obj_property name="ElementShortName">alu_ctrl_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_ctrl_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/data_mux_ctrl_o">
+      <obj_property name="ElementShortName">data_mux_ctrl_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mux_ctrl_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/rf_wen_ctrl_o">
+      <obj_property name="ElementShortName">rf_wen_ctrl_o</obj_property>
+      <obj_property name="ObjectShortName">rf_wen_ctrl_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/alu_zero_i">
+      <obj_property name="ElementShortName">alu_zero_i</obj_property>
+      <obj_property name="ObjectShortName">alu_zero_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/alu_less_i">
+      <obj_property name="ElementShortName">alu_less_i</obj_property>
+      <obj_property name="ObjectShortName">alu_less_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/dmem_we_ctrl_o">
+      <obj_property name="ElementShortName">dmem_we_ctrl_o</obj_property>
+      <obj_property name="ObjectShortName">dmem_we_ctrl_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/cond">
+      <obj_property name="ElementShortName">cond</obj_property>
+      <obj_property name="ObjectShortName">cond</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/ctrl/alu_op">
+      <obj_property name="ElementShortName">alu_op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider31" type="divider">
+      <obj_property name="label">Datapath</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rst_n_i">
+      <obj_property name="ElementShortName">rst_n_i</obj_property>
+      <obj_property name="ObjectShortName">rst_n_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/imem_addr_o">
+      <obj_property name="ElementShortName">imem_addr_o[11:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_addr_o[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/imem_rdata_i">
+      <obj_property name="ElementShortName">imem_rdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_rdata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/dmem_addr_o">
+      <obj_property name="ElementShortName">dmem_addr_o[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_addr_o[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/dmem_wdata_o">
+      <obj_property name="ElementShortName">dmem_wdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_wdata_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/dmem_rdata_i">
+      <obj_property name="ElementShortName">dmem_rdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_rdata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_ctrl_i">
+      <obj_property name="ElementShortName">pc_ctrl_i</obj_property>
+      <obj_property name="ObjectShortName">pc_ctrl_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_jump_ctrl_i">
+      <obj_property name="ElementShortName">pc_jump_ctrl_i</obj_property>
+      <obj_property name="ObjectShortName">pc_jump_ctrl_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/imm_ctrl_i">
+      <obj_property name="ElementShortName">imm_ctrl_i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_ctrl_i[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/data2_alu_ctrl_i">
+      <obj_property name="ElementShortName">data2_alu_ctrl_i</obj_property>
+      <obj_property name="ObjectShortName">data2_alu_ctrl_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu_ctrl_i">
+      <obj_property name="ElementShortName">alu_ctrl_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_ctrl_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/data_mux_ctrl_i">
+      <obj_property name="ElementShortName">data_mux_ctrl_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mux_ctrl_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf_wen_ctrl_i">
+      <obj_property name="ElementShortName">rf_wen_ctrl_i</obj_property>
+      <obj_property name="ObjectShortName">rf_wen_ctrl_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu_zero_ctrl_o">
+      <obj_property name="ElementShortName">alu_zero_ctrl_o</obj_property>
+      <obj_property name="ObjectShortName">alu_zero_ctrl_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu_less_ctrl_o">
+      <obj_property name="ElementShortName">alu_less_ctrl_o</obj_property>
+      <obj_property name="ObjectShortName">alu_less_ctrl_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_next">
+      <obj_property name="ElementShortName">pc_next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_next[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc4">
+      <obj_property name="ElementShortName">pc4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc4[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_jump">
+      <obj_property name="ElementShortName">pc_jump[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_jump[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_jalr">
+      <obj_property name="ElementShortName">pc_jalr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_jalr[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/imm_ext">
+      <obj_property name="ElementShortName">imm_ext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm_ext[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu_result">
+      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/data1">
+      <obj_property name="ElementShortName">data1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/data2">
+      <obj_property name="ElementShortName">data2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf_rd_data2">
+      <obj_property name="ElementShortName">rf_rd_data2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_rd_data2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf_wdata">
+      <obj_property name="ElementShortName">rf_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/instr">
+      <obj_property name="ElementShortName">instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider106" type="divider">
+      <obj_property name="label">pc_ff</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_ff/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_ff/rst_n_i">
+      <obj_property name="ElementShortName">rst_n_i</obj_property>
+      <obj_property name="ObjectShortName">rst_n_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_ff/d_i">
+      <obj_property name="ElementShortName">d_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_ff/q_o">
+      <obj_property name="ElementShortName">q_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_ff/q">
+      <obj_property name="ElementShortName">q[31:0]</obj_property>
+      <obj_property name="ObjectShortName">q[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/pc_ff/WIDTH">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider60" type="divider">
+      <obj_property name="label">IMEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/addr_i">
+      <obj_property name="ElementShortName">addr_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_i[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/data_i">
+      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/wr_en_i">
+      <obj_property name="ElementShortName">wr_en_i</obj_property>
+      <obj_property name="ObjectShortName">wr_en_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/data_o">
+      <obj_property name="ElementShortName">data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/mem">
+      <obj_property name="ElementShortName">mem[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:255][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/DWIDTH">
+      <obj_property name="ElementShortName">DWIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DWIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/AWIDTH">
+      <obj_property name="ElementShortName">AWIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AWIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/imem/SIZE">
+      <obj_property name="ElementShortName">SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider60" type="divider">
+      <obj_property name="label">DMEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/dmem/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/dmem/wr_en_i">
+      <obj_property name="ElementShortName">wr_en_i</obj_property>
+      <obj_property name="ObjectShortName">wr_en_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/dmem/addr_i">
+      <obj_property name="ElementShortName">addr_i[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_i[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/dmem/data_i">
+      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/dmem/data_o">
+      <obj_property name="ElementShortName">data_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/dmem/mem">
+      <obj_property name="ElementShortName">mem[0:255][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:255][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider314" type="divider">
+      <obj_property name="label">Register</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/clk_i">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/rst_n_i">
+      <obj_property name="ElementShortName">rst_n_i</obj_property>
+      <obj_property name="ObjectShortName">rst_n_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/raddr1_i">
+      <obj_property name="ElementShortName">raddr1_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr1_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/raddr2_i">
+      <obj_property name="ElementShortName">raddr2_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr2_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/waddr_i">
+      <obj_property name="ElementShortName">waddr_i[4:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr_i[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/wdata_i">
+      <obj_property name="ElementShortName">wdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/wen_i">
+      <obj_property name="ElementShortName">wen_i</obj_property>
+      <obj_property name="ObjectShortName">wen_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/rdata1_o">
+      <obj_property name="ElementShortName">rdata1_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata1_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/rdata2_o">
+      <obj_property name="ElementShortName">rdata2_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata2_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/rf/regs">
+      <obj_property name="ElementShortName">regs[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regs[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider369" type="divider">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu/a_i">
+      <obj_property name="ElementShortName">a_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a_i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu/b_i">
+      <obj_property name="ElementShortName">b_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">b_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu/alu_op_i">
+      <obj_property name="ElementShortName">alu_op_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_op_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu/result_o">
+      <obj_property name="ElementShortName">result_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_o[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu/zero_o">
+      <obj_property name="ElementShortName">zero_o</obj_property>
+      <obj_property name="ObjectShortName">zero_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu/less_o">
+      <obj_property name="ElementShortName">less_o</obj_property>
+      <obj_property name="ObjectShortName">less_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_trixv_mc_fibo/top_trixv_i/trixv_mc_inst/dp/alu/WIDTH">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+</wave_config>

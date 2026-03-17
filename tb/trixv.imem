@@ -1,0 +1,46 @@
+/*******************************************************************************
+ * Test program for the trixv.
+ * 
+ *
+ * This program calculate the Fibonacci number sequence from 0 to . 
+ * The Fibonacci sequence is a series of numbers where each number is the sum of
+ * the two preceding ones, usually starting with 0 and 1. The sequence goes: 
+ * 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on.
+ *******************************************************************************/
+
+ // Instruction  //  Address     // Assembly code       // C code
+ // -----------  //  -------     // --------------      // ---------------------------------------------------------------------
+    3fc00113     //  00:            li    sp,1020       # // Initialize Stack Pointer to the Last Address of Data Memory: 255 * 4 = 1020
+                 //                                     # int main() {
+    fd010113     //  04:            addi  sp,sp,-48     #   // Allocate 48 bytes on stack
+    02112623     //  08:            sw    ra,44(sp)     #   // Store return address (ra) @ [s0-44]
+    02812423     //  0c:            sw    s0,40(sp)     #   // Store old frame pointer (s0) @ [s0-40]
+    03010413     //  10:            addi  s0,sp,48      #   // Set new frame pointer (s0) to mark start of stack frame
+    40000793     //  14:            li    a5,1024       #   volatile uint32_t *ptr = (volatile uint32_t *)0x400;
+    fcf42c23     //  18:            sw    a5,-40(s0)    #
+    02800793     //  1c:            li    a5,40         #   int n = 40;
+    fef42023     //  20:            sw    a5,-32(s0)    #                                 // n -> M[s0-32]:M[247]
+    fe042623     //  24:            sw    zero,-20(s0)  #   int a = 0;                    // a -> M[s0-20]:M[250]
+    00100793     //  28:            li    a5,1          #   int b = 1;
+    fef42423     //  2c:            sw    a5,-24(s0)    #                                 // b -> M[s0-24]:M[249]
+    fe042223     //  30:            sw    zero,-28(s0)  #   for (int i = 0; i < n; i++) { // int i = 0; i -> M[s0-28]:M[248]
+    03c0006f     //  34:            j     70            #                                 // goto 70;
+    fec42703     //  38:            lw    a4,-20(s0)    #   temp = a + b;                 // a4 <- a
+    fe842783     //  3c:            lw    a5,-24(s0)    #                                 // a5 <- b
+    00f707b3     //  40:            add   a5,a4,a5      #                                 // a5 <- a4 + a5
+    fcf42e23     //  44:            sw    a5,-36(s0)    #                                 // temp -> M[s0-36]
+    fe842783     //  48:            lw    a5,-24(s0)    #   a = b;                        // a5 <- b
+    fef42623     //  4c:            sw    a5,-20(s0)    #                                 // a5 -> a
+    fdc42783     //  50:            lw    a5,-36(s0)    #   b = temp;
+    fef42423     //  54:            sw    a5,-24(s0)    #                                  // a5 -> b
+    fec42703     //  58:            lw    a4,-20(s0)    #   *ptr = a;
+    fd842783     //  5c:            lw    a5,-40(s0)    #
+    00e7a023     //  60:            sw    a4,0(a5)      #
+    fe442783     //  64:            lw    a5,-28(s0)    #                                  // a5 <- i
+    00178793     //  68:            addi  a5,a5,1       #                                  // i++;
+    fef42223     //  6c:            sw    a5,-28(s0)    #                                  // i  -> M[s0-28]
+    fe442703     //  70:            lw    a4,-28(s0)    #                                  // a4 <- i
+    fe042783     //  74:            lw    a5,-32(s0)    #                                  // a5 <- n
+    fcf740e3     //  78:            blt   a4,a5,38      #  }                               // if (i < n) goto 38;
+    0000006f     //  7c:            j     7c            #  while(1);
+                 //                                     #  a: nth Fibonacci number
