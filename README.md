@@ -7,6 +7,11 @@ The processor executes a pre-loaded Fibonacci firmware and transmits results ove
 <figure>
   <img src="20. SoC.png" alt="SoC Architecture"  style="width: 75%">
 </figure>
+
+---
+>> The Complete SystemVerilog For Digital Design and Synthesis: https://udemy.com/course/systemverilog/?referralCode=34525774A6A4CC9B8A24 
+>>
+>> Coupon Code: HELLODIGITAL
 ---
 
 <figure>
@@ -17,7 +22,6 @@ The processor executes a pre-loaded Fibonacci firmware and transmits results ove
 ## Table of Contents
 
 - [TRIX-V-MC — Tiny RISC-V Multi-Cycle Processor (FPGA)](#trix-v-mc--tiny-risc-v-multi-cycle-processor-fpga)
-	- [](#)
 	- [Table of Contents](#table-of-contents)
 	- [Features](#features)
 	- [Architecture Overview](#architecture-overview)
